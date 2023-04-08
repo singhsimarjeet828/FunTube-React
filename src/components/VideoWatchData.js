@@ -31,6 +31,12 @@ useEffect(() => {
   state => state.channelDetails.channel)
 
 
+
+  const handleSubs = ()=>{
+
+    alert("Coming Soon-- This app is in beta stage")
+  }
+
   return (
     <div className='w-full'>
       <HelmetCustom title={title} description={description}/>
@@ -56,7 +62,7 @@ useEffect(() => {
 </div>
 </div>
 <div>
-<button className='hover:bg-red-600 text-white p-2 rounded-3xl w-36 border border-red-600 font-sans font-semibold '>Subscribe</button>
+<button className='hover:bg-red-600 text-white p-2 rounded-3xl w-36 border border-red-600 font-sans font-semibold ' onClick={handleSubs}>Subscribe</button>
 </div>
 
 </div>
