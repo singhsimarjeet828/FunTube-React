@@ -1,0 +1,478 @@
+.App {
+  text-align: center;
+}
+.ytp-chrome-top-buttons{
+  visibility:hidden !important;
+}
+
+body{
+  height: 100%;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+  #side-main-m ::-webkit-scrollbar{
+  width: 10px;
+ }
+#watchthumb::-webkit-scrollbar{
+  width: 10px !important;
+ }
+ #channelthumb::-webkit-scrollbar{
+  width: 10px !important;
+ }
+ #searchthumb::-webkit-scrollbar{
+  width: 10px !important;
+ }
+ #video-main ::-webkit-scrollbar{
+  width: 10px;
+ }
+ #cate-main ::-webkit-scrollbar{
+ display: none;
+ }
+
+ #scrollableDiv ::-webkit-scrollbar{
+  display: none;
+ }
+/* Track */
+#cate-main  ::-webkit-scrollbar-thumb{
+  background: rgb(252, 251, 251); 
+  border-radius: 10px;
+ visibility: hidden;
+}
+
+#channelthumb::-webkit-scrollbar-thumb{
+  background: rgb(252, 251, 251); 
+  border-radius: 10px;
+}
+#watchthumb::-webkit-scrollbar-thumb{
+  background: rgb(252, 251, 251); 
+  border-radius: 10px;
+
+}
+#searchthumb::-webkit-scrollbar-thumb{
+  background: rgb(252, 251, 251); 
+  border-radius: 10px;
+
+}
+/* Handle */
+ #side-main-m ::-webkit-scrollbar-thumb {
+  background: rgb(252, 251, 251); 
+  border-radius: 10px;
+  visibility: hidden;
+}
+#video-main ::-webkit-scrollbar-thumb {
+  background: rgb(252, 251, 251); 
+  border-radius: 10px;
+  visibility: hidden;
+}
+/* Handle on hover */
+#side-main-m ::-webkit-scrollbar-thumb:hover {
+  background: #c91414; 
+}
+#watchthumb::-webkit-scrollbar-thumb:hover {
+  background: #c91414; 
+}
+#searchthumb::-webkit-scrollbar-thumb:hover {
+  background: #c91414; 
+}
+#searchthumb::-webkit-scrollbar-thumb:hover {
+  background: #c91414; 
+}
+#video-main ::-webkit-scrollbar-thumb:hover {
+  background: #c91414; 
+}
+#side-main-m:hover  ::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+#video-main:hover  ::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.duration{
+  font-size: 10px;
+  background-color: #0f0f0f;
+  position: absolute;
+  right: 04px;
+  top:-28px;
+  padding: 1px 4px;
+  border-radius: 5px;
+}
+.durationWatch{
+  font-size: 10px;
+  background-color: #0f0f0f;
+  position:absolute;
+  padding: 2px;
+  border-radius: 5px;
+  bottom: 10px;
+  right: 5px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.anim{
+ animation: fadeIn 1s; 
+ animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  from {left: -100px;}
+  to {left:0px;}
+}
+.animsearch{
+  animation: fadeIn 1s; 
+  animation-fill-mode: forwards;
+  position: relative;
+
+ }
+ 
+ 
+ @keyframes fadeIn {
+   /* 0% { opacity: 0; }
+   100% { opacity: 1; } */
+   from {left:-400px}
+   to {left:0px;}
+ }
+/* @media screen and (max-width: 1124px) {
+  #side-main-m {
+   width: 100% !important;
+  }
+} */
+
+.collapse{
+  display: none;
+
+}
+
+.collapse-side{
+  display: block;
+}
+.showMore{
+  color:red;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+}
+.explore{
+  margin: 2px;
+  background-color: #61dafb !important;
+}
+.showMore:hover{
+  color:white;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+}
+
+#searchfix .lazy-load-image-background.blur.lazy-load-image-loaded{
+  width: 100% !important;
+}
+#hozifix .lazy-load-image-background.blur.lazy-load-image-loaded{
+  width: 100% !important;
+}
+/* @media screen and (min-width: 2500px) {
+  .biggerWidth {
+   width: 50% !important;
+   border: 10px solid red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+} */
+@media screen and (max-width: 1124px) {
+  #side-main {
+position:absolute;
+background-color:#0f0f0f;
+border-radius: 10px;
+z-index: 1;
+  }
+}
+@media screen and (max-width: 1124px) {
+  #left, #right {
+   display: none;
+  }
+}
+@media screen and (max-width: 1124px) {
+  #hscroll {
+  width:85vw !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #hscroll {
+  width:95vw !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .channelsubs {
+display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skelmobile  {
+width: 100% !important;
+margin: 0 !important;
+  }
+}
+@media screen and (max-width: 600px) {
+   .skelm {
+display:none !important;
+  }
+}
+/* @media screen and (max-width: 600px) {
+  .search, .watch {
+margin-top: 2em;
+ } */
+@media screen and (max-width: 375px) {
+  body {
+font-size:80%;
+ }
+}
+@media screen and (max-width: 600px) {
+  .m {
+display: none  !important;
+ }
+}
+ @media screen and (max-width: 320px) {
+  body {
+font-size:65%;
+ }
+}
+
+@media screen and (max-width: 600px) {
+  ::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+ display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .channelflex {
+  display: flex;
+  justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  #searchdiv {
+  flex-wrap: wrap !important;
+  margin: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .searchcontent {
+ width:100% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .searchimage {
+  width: 100% !important;
+  /* z-index:0 !important; */
+  /* justify-content: center !important; */
+  }
+}
+@media screen and (max-width: 600px) {
+  .watchtitle {
+  font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #video-main ::-webkit-scrollbar,#video-main ::-webkit-scrollbar-thumb {
+  display:none;
+  }
+}
+@media screen and (max-width: 600px) {
+  #m-view {
+  display:flex;
+  flex-direction: row;
+  }
+}
+@media screen and (max-width: 600px) {
+  #main span {
+  display: block !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .watch {
+    flex-wrap: wrap;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  .watch .framevideo {
+    width: 100% !important;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  #marg {
+  margin: 0px 05px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #m-dot{
+   display: inline-block !important;
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  #mobile-main {
+   display: inline-block;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .watch {
+    flex-wrap: wrap;
+    width:100%
+
+  }
+  .framevideo{
+    width: 70% !important;
+    margin-bottom: 10px !important;
+    
+  }
+  .horizontalVideo{
+    width: 60% !important;
+    margin-bottom: 40px;
+  }
+   .videoframe{
+    width: 680;
+    height: 340;
+  } 
+}
+@media screen and (max-width: 1124px) {
+#main {
+width: 200px !important;
+margin:0px !important;
+  }
+}
+@media screen and (max-width: 1124px) {
+  .main {
+height: 70vh !important;
+padding-bottom: 100px !important;
+    }
+  }
+@media only screen and (min-width: 640px) {
+  #m-menu {
+      display: none;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .watch {
+    flex-wrap: wrap;
+    width:100%;
+
+  }
+  .framevideo{
+    margin-bottom: 10px !important;
+    
+  }
+  .horizontalVideo{
+    width: 100% !important;
+    margin-bottom: 40px;
+  }
+   .videoframe{
+    width: 100% !important;
+    height: 200px !important;
+  } 
+}
+@media screen and (max-width: 600px) {
+  #mobile-main {
+   display: none;
+  }
+}
+
+#dots{
+  visibility: visible;
+  position: absolute;
+  right: 3px;
+  top:06px
+
+}
+.collapse-form{
+  display: none;
+}
+/* #video-main{
+ overflow: auto;
+ height: 75vh;
+} */
+.image{
+  width: 100% !important;
+  height: 100% !important;
+}
+.imagesearch{
+  width: 100%;
+  height: 100%
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  display: block;
+  border-top: 5px solid blue;
+  border-right: 5px solid green;
+  border-bottom: 5px solid red;
+  border-left: 5px solid rgb(253, 207, 0);
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+#scrollableDiv{
+  height: 76vh;
+  overflow: auto;
+
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@media screen and (max-width: 600px) {
+  #main,image {
+
+width: 100% !important;
+margin:0px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+#video-main {
+width: 100% !important;
+margin:auto !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .image {
+  height: 100% !important;
+  margin:auto !important;
+
+    }
+  }
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
